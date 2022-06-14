@@ -63,15 +63,20 @@ header nav .menu {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     align-items: center;
+    transition: color 1s, border 1s;
 }
 
 .menu .menu__link:hover {
     color: #f9b815;
-    background-color: #A81238;
-    transition: border 1s background-color 2s;
-    border-color: #A81238;
+    border: 2px solid #A81238;
 } 
 
+.gallery {
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.gallery__img:hover {
+    transform: rotate(10deg);
+}
 
 .row {
     display: flex;
