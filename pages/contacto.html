@@ -8,14 +8,15 @@
     <link rel="icon" href="/Images/letra.jpg" type="image/jpg" sizes="16x16">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
-<body id="grid__container">
-    <header class="grid__header">
+<body>
+    <header class="container">
         <picture class="header__logo">
                 <img class="header__img animate__animated animate__bounceInLeft" src="../images/logo_mejor1.png" alt="logo">
         </picture>
-        <nav class="grid__menu">
+        <nav>
             <ul class="menu" data-aos="flip-right">
                 <li class="menu__item">
                     <a class="menu__link" href="../index.html">Inicio</a>
@@ -35,7 +36,36 @@
             </ul>    
         </nav>
     </header>
-    <main class="main grid__main">
+    <main class="container">
+            <section class="main__section-formu">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.64546491478694!2d-60.93336973619382!3d-34.580910337277686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3d23d61227%3A0xd4ef6a56c10c14b9!2sAv.%20San%20Mart%C3%ADn%201051%2C%20B6000%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653456647776!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                    <h3>Nos podes envíar un formulario y te contactamos:</h3>
+                <div name="formulario" method="get" action="">
+                <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Nacionalidad</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Italia</option>
+                    <option value="3">Francia</option>
+                    <option value="4">Colombia</option>
+                    <option value="5">Perú</option>
+                    <option value="6">Bolivia</option>
+                    <option value="7">Uruguay</option>
+                </select>
+                <div>
+                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-check">Envíar Formulario</label>
+                </div>    
+            </section>
             <section class="main__section">
                 <div>
                     <a href="https://www.instagram.com/antoninopanaderia/" target="_blank">
@@ -54,30 +84,9 @@
                     <label>(2364-422195)</label>                
                 </div>
             </section>
-            <section class="main__section-formu">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.64546491478694!2d-60.93336973619382!3d-34.580910337277686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3d23d61227%3A0xd4ef6a56c10c14b9!2sAv.%20San%20Mart%C3%ADn%201051%2C%20B6000%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653456647776!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                    <h3>Nos podes envíar un formulario y te contactamos:</h3>
-                <form name="formulario" method="get" action="">
-                    <p>
-                        <label>Nombre y Apellido: <input type="text" name="nombre"></label>       
-                    </p>
-                    <p>
-                        <label>Número de Cel/Tel: <input type="number" name="celular"></label>
-                    </p>
-                    <p>
-                        <label>Correo Electrónico: <input type="email" name="correo"></label>
-                    </p>
-                    <p>
-                        <label>Consulta: <textarea name="texto" cols="50" rows="6"></textarea></label>
-                    </p>
-                    <p><button type="submit">Enviar Formulario</button></p>
-                </form>
-            </section>
         </main>
     </main>
-    <footer class="grid__footer">
+    <footer class="container">
         <address>
             <p>Junín, Buenos Aires</p>
         </address>
@@ -85,6 +94,7 @@
     </footer>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script>
     AOS.init();
 </script>
