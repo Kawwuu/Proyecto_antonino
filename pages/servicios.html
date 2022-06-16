@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
-<body id="grid__container">
-    <header class="grid__header">
+<body>
+    <header class="container">
         <picture class="header__logo">
                 <img class="header__img animate__animated animate__bounceInLeft" src="../images/logo_mejor1.png" alt="logo">
         </picture>
@@ -36,15 +36,33 @@
             </ul>
         </nav>
     </header>
-    <main class="main grid__main">
-        <picture>
-            <img src="../images/promo1.png" width="600" height="600">
-            <img src="../images/promo2.png" width="600" height="600">
-            <img src="../images/promo3.png" width="600" height="600">
-            <img src="../images/promo4.png" width="600" height="600">
-        </picture>
-    </main>    
-    <footer class="grid__footer">
+    <main class="main promos container">
+        <div class="card" style="width: 40rem;">
+                <img src="../images/promo1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Las mejores promos para eventos. Promo número 1</p>
+            </div>
+        </div>
+        <div class="card" style="width: 40rem;">
+                <img src="../images/promo2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Las mejores promos para eventos. Promo número 2</p>
+            </div>
+        </div>
+        <div class="card" style="width: 40rem;">
+                <img src="../images/promo3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Las mejores promos para eventos. Promo número 3</p>
+            </div>
+        </div>
+        <div class="card" style="width: 40rem;">
+                <img src="../images/promo4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Las mejores promos para eventos. Promo cumpleaños</p>
+            </div>
+        </div>
+    </main>
+        <footer class="container">
         <address>
             <p>Junín, Buenos Aires</p>
         </address>
