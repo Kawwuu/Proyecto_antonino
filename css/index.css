@@ -117,7 +117,7 @@ footer{
     font-size: 14px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 310px) {
     .grid__header {
         flex-direction: column;
         gap: 2rem;
@@ -126,7 +126,12 @@ footer{
         flex-direction: column;
         gap: 2rem;
     }
-
+    @media screen and (max-width: 600px) {
+        .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+    }
 }    
 @media screen and (max-width: 800px) {
     .column {
@@ -134,9 +139,9 @@ footer{
     max-width: 50%;
     }
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .column {
     flex: 100%;
     max-width: 100%;
     }
-}
+} */
