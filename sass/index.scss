@@ -1,3 +1,5 @@
+/* TypeScript */
+// @import './typescript/index';
 
 /* MISC */
 @import './misc/variables';
@@ -12,3 +14,65 @@
 @import './views/home';
 @import './views/contacto';
 @import './views/nosotros';
+
+
+@media screen and (max-width: 480px){
+    .header {
+        width: 100%;
+        background-color: red;
+        padding: 1rem;
+        color: yellow;
+
+    @include flex( row, wrap, space-between, center);
+
+
+    .button{
+        display: none;
+        cursor:  pointer;
+    }
+
+    @include media(){
+        display: block;
+    }
+
+    .button__svg{
+        width: 2em;
+        height: 2em;
+        fill: white;
+    }
+
+    .nav{
+
+        @include media() {
+            width:100%;
+            // display: none;
+            opacity: 0;
+            height:0vh;
+            pointer-events: none;
+            overflow: hidden;
+            transition:  all .5s ease;
+            @include flex( column, nowrap, center, center);
+
+            &.activo{
+                // display: flex;
+                opacity: 1;
+                height:50vh;
+                pointer-events: auto;
+            }
+        }
+    }
+    .ul{
+        @include flex( row, wrap, flex-end, center);
+
+        @include media(){
+            flex-direction: column;
+        }
+    }
+    .li{
+        margin: 0 .5em;
+        @include media(){
+            margin: 1em 0;
+            }
+        }
+    }
+}
