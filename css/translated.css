@@ -1,63 +1,11 @@
-/* TypeScript */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /* MISC */
 /* PARTIALS */
-/* VIEWS */
-@media screen and (max-width: 480px) {
-  .header {
-    width: 100%;
-    background-color: red;
-    padding: 1rem;
-    color: yellow;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center; }
-    .header .button {
-      display: none;
-      cursor: pointer; } }
-  @media screen and (max-width: 480px) and (max-width: 480) {
-    .header {
-      display: block; } }
-
-@media screen and (max-width: 480px) {
-    .header .button__svg {
-      width: 2em;
-      height: 2em;
-      fill: white; } }
-  @media screen and (max-width: 480px) and (max-width: 480) {
-    .header .nav {
-      width: 100%;
-      opacity: 0;
-      height: 0vh;
-      pointer-events: none;
-      overflow: hidden;
-      transition: all .5s ease;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center; }
-      .header .nav.activo {
-        opacity: 1;
-        height: 50vh;
-        pointer-events: auto; } }
-
-@media screen and (max-width: 480px) {
-    .header .ul {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      align-items: center; } }
-    @media screen and (max-width: 480px) and (max-width: 480) {
-      .header .ul {
-        flex-direction: column; } }
-
-@media screen and (max-width: 480px) {
-    .header .li {
-      margin: 0 .5em; } }
-    @media screen and (max-width: 480px) and (max-width: 480) {
-      .header .li {
-        margin: 1em 0; } }
-
 header .header__img {
   max-width: 250px; }
 
@@ -83,6 +31,11 @@ header .menu .menu__link:hover {
   color: #f9b815;
   border: 2px solid #A81238; }
 
+footer {
+  background-color: #A81238;
+  font-size: 14px; }
+
+/* VIEWS */
 main .main {
   width: auto;
   flex-direction: row;
@@ -91,8 +44,7 @@ main .main {
   background-color: #A81238; }
 
 main .main__section {
-  display: flex;
-  align-items: flex-end; }
+  display: flex; }
 
 main .main__section-formu {
   display: flex;
@@ -120,7 +72,3 @@ main .row__column {
 main .row__column img {
   margin-top: 8px;
   vertical-align: middle; }
-
-footer {
-  background-color: #A81238;
-  font-size: 14px; }

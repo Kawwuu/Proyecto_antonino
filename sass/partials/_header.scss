@@ -1,0 +1,27 @@
+header {
+    .header__img {
+        max-width: 250px;
+    }
+    nav .menu {
+        display: flex;
+        gap: 2rem;
+    }
+    .menu .menu__link {
+        font-size: 2.2em;
+        padding: 1rem 1.2rem;
+        border:  2px solid #f9b815;
+        color: #f9b815;
+        font-size: 20px;
+        list-style-type: none;
+        font-style: italic;
+        font-family: 'Courgette', cursive;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        align-items: center;
+        transition: color 1s, border 1s;
+    }
+    .menu .menu__link:hover {
+        color: #f9b815;
+        border: 2px solid #A81238;
+    }
+}

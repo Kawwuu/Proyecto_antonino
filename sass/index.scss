@@ -1,5 +1,9 @@
-/* TypeScript */
-// @import './typescript/index';
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* MISC */
 @import './misc/variables';
@@ -15,97 +19,6 @@
 @import './views/contacto';
 @import './views/nosotros';
 
-
-@media screen and (max-width: 480px){
-    .header {
-        width: 100%;
-        background-color: red;
-        padding: 1rem;
-        color: yellow;
-
-    @include flex( row, wrap, space-between, center);
-
-
-    .button{
-        display: none;
-        cursor:  pointer;
-    }
-
-    @include media(){
-        display: block;
-    }
-
-    .button__svg{
-        width: 2em;
-        height: 2em;
-        fill: white;
-    }
-
-    .nav{
-
-        @include media() {
-            width:100%;
-            // display: none;
-            opacity: 0;
-            height:0vh;
-            pointer-events: none;
-            overflow: hidden;
-            transition:  all .5s ease;
-            @include flex( column, nowrap, center, center);
-
-            &.activo{
-                // display: flex;
-                opacity: 1;
-                height:50vh;
-                pointer-events: auto;
-            }
-        }
-    }
-    .ul{
-        @include flex( row, wrap, flex-end, center);
-
-        @include media(){
-            flex-direction: column;
-        }
-    }
-    .li{
-        margin: 0 .5em;
-        @include media(){
-            margin: 1em 0;
-            }
-        }
-    }
-}
-
-
-header {
-    .header__img {
-        max-width: 250px;
-    }
-    nav .menu {
-        display: flex;
-        gap: 2rem;
-    }
-    .menu .menu__link {
-        font-size: 2.2em;
-        padding: 1rem 1.2rem;
-        border:  2px solid #f9b815;
-        color: #f9b815;
-        font-size: 20px;
-        list-style-type: none;
-        font-style: italic;
-        font-family: 'Courgette', cursive;
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        align-items: center;
-        transition: color 1s, border 1s;
-    }
-    .menu .menu__link:hover {
-        color: #f9b815;
-        border: 2px solid #A81238;
-    }
-}
-
 main{
     .main {
         width: auto;
@@ -116,8 +29,8 @@ main{
     }
     .main__section{
         display: flex;
-        align-items: flex-end;
-    }
+    }    
+
     .main__section-formu{
         display: flex;
         flex-direction: column;
@@ -147,9 +60,4 @@ main{
         margin-top: 8px;
         vertical-align: middle;
     }
-}
-
-footer{
-    background-color: #A81238;
-    font-size: 14px;
 }
