@@ -1,10 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@700&display=swap");
+/* MISC */
+/* Colors */
+/* Spacings */
+.spacing-large {
+  padding: 6rem; }
+
+.spacing-medium {
+  padding: 2.4rem; }
+
+.spacing-small {
+  padding: 2rem; }
+
+.spacing-xsmall {
+  padding: 1.5rem; }
+
+/* Font-family */
+/* Font-Sizes */
+/* Normalize */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* MISC */
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #2B2B2B; }
+
+ul {
+  list-style-type: none; }
+
 /* PARTIALS */
 header .header__img {
   max-width: 250px; }
@@ -36,6 +62,36 @@ footer {
   font-size: 14px; }
 
 /* VIEWS */
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex-wrap: wrap; }
+  .cards .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex: 1 1 clamp(300px, 30%, 400px); }
+    .cards .box__info {
+      display: flex;
+      flex-direction: column;
+      padding: 2.4rem; }
+    .cards .box .box__title {
+      font-family: var(--font-title);
+      color: var(--primary);
+      font-size: var(--text-medium); }
+    .cards .box .box__subtitle {
+      margin-top: .6rem;
+      color: var(--secondary);
+      font-size: var(--text-small); }
+    .cards .box .box__text {
+      margin-top: 1rem;
+      color: var(--text-color);
+      font-size: var(--text-base); }
+
 main .main {
   width: auto;
   flex-direction: row;

@@ -1,0 +1,36 @@
+.cards {
+    @include flex(row, center, stretch, $spacing-xsmall);
+    flex-wrap: wrap;
+
+    .box {
+        @include flex(column, flex-start, stretch, map-get($spacings,$spacing-small));
+        flex: 1 1 clamp(300px, 30%, 400px);
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            padding: $spacing-medium
+        }    
+        
+        .box__title {
+            font-family: var(--font-title);
+            color: var(--primary);
+            font-size: var(--text-medium)
+        }
+        
+        .box__subtitle {
+            margin-top: .6rem;
+        
+            color: var(--secondary);
+            font-size: var(--text-small)
+        }
+        
+        .box__text {
+            margin-top: 1rem;
+            color: var(--text-color);
+            font-size: var(--text-base)
+        }
+    }    
+}
+
+

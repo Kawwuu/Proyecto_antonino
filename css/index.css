@@ -36,15 +36,6 @@
     grid-area: footer;
 }
 
-
-html {
-    font-size: 62.5%; 
-}
-
-ul {
-    list-style-type: none;
-}
-
 @media screen and (max-width: 310px) {
     .grid__header {
         flex-direction: column;
@@ -67,9 +58,3 @@ ul {
     max-width: 50%;
     }
 }
-/* @media screen and (max-width: 600px) {
-    .column {
-    flex: 100%;
-    max-width: 100%;
-    }
-} */

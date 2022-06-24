@@ -1,0 +1,28 @@
+$theme: 'dark';
+
+/* Normalize */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+@if $theme == 'dark' {
+    body {
+        background-color: $alternative;
+    }
+}    @else {
+    body{
+        background-color: $base;
+}
+}
+
+
+
+ul {
+    list-style-type: none;
+}
