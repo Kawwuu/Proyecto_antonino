@@ -25,3 +25,64 @@ header {
         border: 2px solid #A81238;
     }
 }
+
+#grid__container {
+    display: grid;
+    grid-template-areas: 'header header header'
+    'main main main'
+    'footer footer footer';
+    border: 1px solid black;
+    text-align: center;
+    background-color: #A81238;
+}
+.grid__header {
+    grid-area: header;
+    background-color: #A81238;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 2rem 0;
+    border-bottom: 2px solid #f9b815;
+}
+.grid__menu {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grid__main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+}
+.grid__main-ubication {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.grid__footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 310px) {
+    .grid__header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+    }
+}    
+@media screen and (max-width: 800px) {
+    .column {
+    flex: 50%;
+    max-width: 50%;
+    }
+}

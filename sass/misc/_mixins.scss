@@ -1,20 +1,30 @@
-@mixin flex( $dir, $wrap, $just, $align) {
-    display: flex;
-    flex-flow:  $dir $wrap;
-    justify-content: $just;
-    align-items: $align;
-}
-
-@mixin media(){
-    @media screen and (max-width: 480) {
-        @content
-    }
-}
-
-@mixin  flex ($dir, $jus, $alg, $gap) {
+@mixin flex($dir: row, $jus: flex-start, $alg: stretch, $gap: 0) {
     display: flex;
     flex-direction: $dir;
     justify-content: $jus;
     align-items: $alg;
     gap: $gap;
+}
+
+@mixin square($size: 24px) {
+    width: $size;
+    height: $size;
+}
+
+@mixin  grid($cols, $rows) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+}
+
+@mixin childGird($cStart, $cEnd, $rStart, $rEnd) {
+    grid-column:  $cStart / $cEnd;
+    grid-row:  $rStart / $rEnd;
+}
+
+
+@mixin media(){
+    @media screen and (max-width: 480) {
+        @content
+    }
 }
