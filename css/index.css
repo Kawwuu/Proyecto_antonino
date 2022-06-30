@@ -127,7 +127,8 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    flex: 1 1 clamp(300px, 30%, 400px); }
+    flex: 1 1 clamp(300px, 30%, 400px);
+    color: #f9b815; }
     .cards .box__info {
       display: flex;
       flex-direction: column;
@@ -135,11 +136,11 @@ footer {
     .cards .box .box__title {
       font-family: var(--font-title);
       color: var(--primary);
-      font-size: var(--text-medium); }
+      font-size: 2rem; }
     .cards .box .box__subtitle {
       margin-top: .6rem;
       color: var(--secondary);
-      font-size: var(--text-small); }
+      font-size: 1.2rem; }
     .cards .box .box__text {
       margin-top: 1rem;
       color: var(--text-color);

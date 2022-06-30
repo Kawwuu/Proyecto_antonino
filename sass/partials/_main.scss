@@ -1,0 +1,40 @@
+// @media screen and (min-width: 320) {
+// main{
+//     .bar-btn{
+//         font-size: 25px;
+//         color: #f9b815;
+//         margin-right: 20px;
+//         cursor: pointer;
+//     }.nav_button{
+//         position: fixed;
+//         width: 100px;
+//         height: 0vh;
+//         top: 100px;
+//         background-color: rgba(0, 0, 0, .95);
+//         text-align: center;
+//         transition: all .5s;
+//     } .nav_button li{
+//         display: none;
+//         line-height: 30px;
+//         margin: 50px 0;
+//         transition: all .5s;
+//     } .nav_button li a{
+//         color: #f9b815;
+//         font-size: 16px;
+//         text-transform: uppercase;
+//         font-weight: 600;
+//     } .nav_button li a .active{
+//         color: #A81238;
+//         transition: .3s;
+//     } .nav_button li a:hover{
+//         color: #A81238;
+//         transition: .3s;
+//     } #check{
+//         display: none;
+//     } #check:checked ~ .nav_button {
+//         height: 100vh;
+//     } #check:checked ~ .nav_button li{
+//         display: block;
+//     }
+//     }
+// }
