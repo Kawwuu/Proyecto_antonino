@@ -1,9 +1,17 @@
 /* Colors */
-$primary: #f9b815;
-$secondary: #f9b815;
-$alternative: #2B2B2B;
-$text-color: #302F4D;
-$base: #FDF7FA;
+$primary: rgb(168, 18, 56);
+$secondary: rgb(249, 184, 21);
+$alternative: rgb(43, 43, 43);
+
+/* Font-Sizes */
+$font-p: 1.8rem;
+$font-h1: 3.0rem;
+$font-h2: 2.4rem;
+$font-h3: 1.5rem;
+
+/* Font-family */
+$font-principal: 'Courgette', sans-serif;
+$font-secondary: 'Roboto', serif;
 
 /* Spacings */
 $spacing-large: 6rem;
@@ -18,19 +26,5 @@ $spacings:(
     spacing-xsmall: 1.5rem
 );
 
-@each $key, $val in $spacings {
-    .#{$key} {
-        padding: #{$val}
-        }
-}
 
 
-/* Font-family */
-$font-principal: 'Barlow', sans-serif;
-$font-titlle: 'Roboto Slab', serif;
-
-/* Font-Sizes */
-$text-large: 5.2em;
-$text-medium: 2.2em;
-$text-base: 1.5em;
-$text-small: 1.4em;

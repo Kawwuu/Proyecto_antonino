@@ -1,0 +1,55 @@
+
+@media(win-width: 1400px){
+    nav, .servicios, footer, .presentacion{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media(max-widh: 992px){
+    .presentacion, .servicios_tipo{
+        flex-wrap: wrap !important;
+    }
+    .presentacion div{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    nav{
+        @include caja-flex(center, center, wrap);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 420px){
+    .presentacion div{
+        text-align: center;
+        margin-bottom: 30px;
+        h1, p{
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .grid__header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+    }
+}    
+@media screen and (max-width: 800px) {
+    .column {
+    flex: 50%;
+    max-width: 50%;
+    }
+}

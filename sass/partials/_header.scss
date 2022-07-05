@@ -9,20 +9,20 @@ header {
     .menu .menu__link {
         font-size: 2.2em;
         padding: 1rem 1.2rem;
-        border:  2px solid #f9b815;
-        color: #f9b815;
+        border:  2px solid $secondary;
+        color: $secondary;
         font-size: 20px;
         list-style-type: none;
         font-style: italic;
-        font-family: 'Courgette', cursive;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-principal;
+        font-family: $font-secondary;
         text-decoration: none;
         align-items: center;
         transition: color 1s, border 1s;
     }
     .menu .menu__link:hover {
-        color: #f9b815;
-        border: 2px solid #A81238;
+        color: $secondary;
+        border: 2px solid $primary;
     }
 }
 
@@ -31,17 +31,16 @@ header {
     grid-template-areas: 'header header header'
     'main main main'
     'footer footer footer';
-    border: 1px solid black;
     text-align: center;
-    background-color: #A81238;
+    background-color: $primary;
 }
 .grid__header {
     grid-area: header;
-    background-color: #A81238;
+    background-color: $primary;
     margin: 0 auto;
     display: inline-block;
     padding: 2rem 0;
-    border-bottom: 2px solid #f9b815;
+    border-bottom: 2px solid $secondary;
 }
 .grid__menu {
     grid-area: header;
@@ -62,27 +61,4 @@ header {
 }
 .grid__footer {
     grid-area: footer;
-}
-
-@media screen and (max-width: 310px) {
-    .grid__header {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .main {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    @media screen and (max-width: 600px) {
-        .column {
-        flex: 100%;
-        max-width: 100%;
-        }
-    }
-}    
-@media screen and (max-width: 800px) {
-    .column {
-    flex: 50%;
-    max-width: 50%;
-    }
 }

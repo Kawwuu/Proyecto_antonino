@@ -1,0 +1,20 @@
+.contacto{
+    div{
+        text-align: center;
+    }
+    .servios_tipos{
+        @include caja-flex(center, center, nowrap);
+        i{
+            font-size: 30px;
+            color: $secondary;
+        }
+    }
+}
+.presentacion__section{
+    display: flex;
+    padding-top: 50px;
+}
+
+label{
+    color: $secondary;
+}

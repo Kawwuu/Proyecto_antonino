@@ -1,4 +1,11 @@
 footer{
     background-color: #A81238;
     font-size: 14px;
+    p{
+        font-family: $font-principal;
+        color: $alternative;
+    }h5{
+        font-family: $font-secondary;
+        color: $alternative;
+    }
 }
