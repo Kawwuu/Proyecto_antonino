@@ -13,75 +13,66 @@
     <meta name="keywords" content="Panaderia, Antonino, Contacto, Redes Sociales, Telefono">
 </head>
 <body id="grid__container">
-    <header class="grid__header">
-        <picture class="header__logo">
-                <img class="header__img animate__animated animate__bounceInLeft" src="../images/logo_mejor1.png" alt="logo">
-        </picture>
-        <nav class="grid__menu">
-            <ul class="menu" data-aos="flip-right">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./servicios.html">Servicios</a>
+    <header id="menu">         
+        <nav>
+            <a href="../index.html"><img src="../images/logo_mejor2.png" class="logo animate__animated animate__bounceInLeft" alt="logo" width="300" height="50"></a>
+            <ul data-aos="flip-right">
+                <li>
+                    <a href="../index.html">INICIO</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./nosotros.html">Nosotros</a>
+                    <a href="./productos.html">PRODUCTOS</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./contacto.html">Contacto</a>
+                    <a href="./servicios.html">SERVICIOS</a>
                 </li>
-            </ul>    
-        </nav>
+                <li>
+                    <a href="./nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>            
     </header>
-    <main class="grid__main grid__main-ubication">
+    <main>
             <section class="main__section presentacion">
                 <p>Seguinos en nuestras redes sociales</p>
                 <section class="presentacion__section">
                     <div>
                         <a href="https://www.instagram.com/antoninopanaderia/" target="_blank">
-                            <img src="../images/instagram.png" width="50">
+                            <img class="images_redes" src="../images/instagram.png" width="50">
                             <label>Instagram</label>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.facebook.com/AntoninoPanaderia" target="_blank">
-                            <img src="../images/facebook.png" width="50">
+                            <img class="images_redes" src="../images/facebook.png" width="50">
                             <label>Facebook</label>
                         </a>           
                     </div>
                     <div>
-                        <img src="../images/phone.png" width="45">
+                        <img class="images_redes" src="../images/phone.png" width="45">
                         <label>(2364-422195)</label>                
                     </div>
                     </section>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.64546491478694!2d-60.93336973619382!3d-34.580910337277686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3d23d61227%3A0xd4ef6a56c10c14b9!2sAv.%20San%20Mart%C3%ADn%201051%2C%20B6000%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653456647776!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.64546491478694!2d-60.93336973619382!3d-34.580910337277686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb3d23d61227%3A0xd4ef6a56c10c14b9!2sAv.%20San%20Mart%C3%ADn%201051%2C%20B6000%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653456647776!5m2!1ses-419!2sar" width="360" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="flex_item">
                     <h1>VISITANOS EN NUESTRO LOCAL</h1>
                     <p>
                         Horarios:<br>Martes a Domingo de 6:00am - 13:00pm a 15:00pm - 21:00pm
                     </p>
-                    <div>
-                        <button class="btn_principal" type ="submit">COMUNICATE</button>
-                        <button class="btn_secundario" type ="submit">CONTACTO</button>
-                    </div>
                 </div>
             </section>
     </main>
-    <footer class="grid__footer">
-        <address>
-            <p>Junín, Buenos Aires</p>
-        </address>
-        <h5>&copy; Derechos Reservados 2022</h5>
+    <footer>
+        <p class="footer-content">&copy; Derechos Reservados 2022</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 </html>

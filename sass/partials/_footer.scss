@@ -1,11 +1,11 @@
 footer{
-    background-color: #A81238;
-    font-size: 14px;
-    p{
-        font-family: $font-principal;
-        color: $alternative;
-    }h5{
-        font-family: $font-secondary;
-        color: $alternative;
+    min-height: 80px;
+    background-color: $alternative;
+    margin-top: 0;
+    .footer-content{
+        text-align:center;
+        padding-top:30px;
+        padding-bottom:30px;
+        color: $secondary;
     }
 }

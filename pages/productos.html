@@ -12,32 +12,30 @@
     <meta name="description" content="En Panaderia Antonino nos destacamos por la calidad de nuestros productos. Todos nuestros productos estan realizados con materia prima 100% artesanal">
     <meta name="keywords" content="Panaderia, Antonino, Productos, Calidad, Dulce, Salado">
 </head>
-<body id="grid__container">
-    <header class="grid__header">
-        <picture class="header__logo">
-                <img class="header__img animate__animated animate__bounceInLeft" src="../images/logo_mejor1.png" alt="logo">
-        </picture>
+<body>
+    <header id="menu">         
         <nav>
-            <ul class="menu" data-aos="flip-right">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./servicios.html">Servicios</a>
+            <a href="../index.html"><img src="../images/logo_mejor2.png" class="logo animate__animated animate__bounceInLeft" alt="logo" width="300" height="50"></a>
+            <ul data-aos="flip-right">
+                <li>
+                    <a href="../index.html">INICIO</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./nosotros.html">Nosotros</a>
+                    <a href="./productos.html">PRODUCTOS</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./contacto.html">Contacto</a>
+                    <a href="./servicios.html">SERVICIOS</a>
                 </li>
-            </ul> 
-        </nav>
+                <li>
+                    <a href="./nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>            
     </header>
-    <main class="row grid__main"> 
+    <main class="row"> 
         <div class="row__column gallery">
             <img src="../images/alfajores_chocolate1.jpeg" class="gallery__img" width="100%">
             <img src="../images/alfajores_mixtos1.jpeg" class="gallery__img" width="100%">
@@ -72,15 +70,12 @@
         </div>
         </div>
     </main>
-    <footer class="grid__footer">
-        <address>
-            <p>Junín, Buenos Aires</p>
-        </address>
-        <h5>&copy; Derechos Reservados 2022</h5>
-    </footer>    
+    <footer>
+        <p class="footer-content">&copy; Derechos Reservados 2022</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-</html> 
+</html>

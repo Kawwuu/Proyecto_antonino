@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  font-family: "Courgette", sans-serif, "Roboto", serif;
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: #a81238; }
 
 ul {
@@ -27,202 +27,84 @@ a {
   display: inline-block;
   color: #f9b815; }
 
-.container {
+img {
   width: 80%;
-  margin: auto; }
-
-p {
-  font-size: 1.8rem;
-  color: #f9b815; }
-
-h2 {
-  font-size: 2.4rem; }
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: lighter; }
-
-@media (win-width: 1400px) {
-  nav, .servicios, footer, .presentacion {
-    width: 60%;
-    margin: auto; } }
-
-@media (max-widh: 992px) {
-  .presentacion, .servicios_tipo {
-    flex-wrap: wrap !important; }
-  .presentacion div {
-    text-align: center;
-    margin-bottom: 30px; }
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-    padding-top: 20px; } }
-
-@media (max-width: 420px) {
-  .presentacion div {
-    text-align: center;
-    margin-bottom: 30px; }
-    .presentacion div h1, .presentacion div p {
-      padding: 0; } }
-
-@media screen and (max-width: 310px) {
-  .grid__header {
-    flex-direction: column;
-    gap: 2rem; }
-  .main {
-    flex-direction: column;
-    gap: 2rem; } }
-
-@media screen and (max-width: 310px) and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%; } }
-
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%; } }
+  height: auto; }
 
 /* PARTIALS */
-header .header__img {
-  max-width: 250px; }
+.logo {
+  width: 100px;
+  height: 80px; }
 
-header nav .menu {
-  display: flex;
-  gap: 2rem; }
+header {
+  position: fixed;
+  top: 0;
+  border-top: 30px solid #a81238;
+  width: 100%; }
 
-header .menu .menu__link {
-  font-size: 2.2em;
-  padding: 1rem 1.2rem;
-  border: 2px solid #f9b815;
-  color: #f9b815;
-  font-size: 20px;
-  list-style-type: none;
-  font-style: italic;
-  font-family: "Courgette", sans-serif;
-  font-family: "Roboto", serif;
-  text-decoration: none;
-  align-items: center;
-  transition: color 1s, border 1s; }
-
-header .menu .menu__link:hover {
-  color: #f9b815;
-  border: 2px solid #a81238; }
-
-#grid__container {
-  display: grid;
-  grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
-  text-align: center;
-  background-color: #a81238; }
-
-.grid__header {
-  grid-area: header;
+.wrapper {
   background-color: #a81238;
-  margin: 0 auto;
-  display: inline-block;
-  padding: 2rem 0;
-  border-bottom: 2px solid #f9b815; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
-.grid__menu {
-  grid-area: header;
+nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between; }
-
-.grid__main {
-  grid-area: main;
-  display: flex;
-  justify-content: space-around; }
-
-.grid__main-ubication {
-  align-items: flex-end;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  align-content: center; }
-
-.grid__footer {
-  grid-area: footer; }
+  flex-wrap: nowrap; }
+  nav ul {
+    display: flex;
+    padding: 0; }
+    nav ul a {
+      padding: 10px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    nav ul a:hover {
+      color: #a81238;
+      transform: scale(1.1); }
 
 footer {
-  background-color: #A81238;
-  font-size: 14px; }
-  footer p {
-    font-family: "Courgette", sans-serif;
-    color: #2b2b2b; }
-  footer h5 {
-    font-family: "Roboto", serif;
-    color: #2b2b2b; }
+  min-height: 80px;
+  background-color: #2b2b2b;
+  margin-top: 0; }
+  footer .footer-content {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #f9b815; }
 
-main .main {
-  width: auto;
-  flex-direction: row;
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
   display: flex;
-  justify-content: space-around;
-  background-color: #a81238; }
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .presentacion .flex-item2 {
+    text-align: center; }
+  .presentacion h1 {
+    margin-top: 0;
+    padding-right: 20px;
+    font-size: 3rem; }
+  .presentacion p {
+    padding-right: 20px;
+    padding-bottom: 10px; }
 
-main .main__section {
-  display: flex; }
+.servicios div {
+  text-align: center; }
 
-main .main__section-formu {
+.servicios .tipo-servicios {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-main .gallery {
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-main .gallery__img:hover {
-  transform: rotate(10deg); }
-
-main .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  box-sizing: border-box;
-  background-color: #A81238; }
-
-main .row__column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px; }
-
-main .row__column img {
-  margin-top: 8px;
-  vertical-align: middle; }
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .servicios .tipo-servicios i {
+    font-size: 30px;
+    color: #6495ED; }
 
 /* VIEWS */
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  gap: 1.5rem;
-  flex-wrap: wrap; }
-  .cards .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex: 1 1 clamp(300px, 30%, 400px);
-    color: #f9b815; }
-    .cards .box__info {
-      display: flex;
-      flex-direction: column;
-      padding: 2.4rem; }
-    .cards .box .box__title {
-      font-family: "Courgette", sans-serif, "Roboto", serif;
-      color: var(--secondary);
-      font-size: 2rem; }
-    .cards .box .box__subtitle {
-      margin-top: .6rem;
-      color: var(--secondary);
-      font-size: 1.2rem; }
-    .cards .box .box__text {
-      margin-top: 1rem;
-      color: var(--secondary); }
+.images {
+  width: 500px; }
 
 .contacto div {
   text-align: center; }
@@ -243,10 +125,13 @@ main .row__column img {
 label {
   color: #f9b815; }
 
+.images_redes {
+  width: 50px; }
+
 .titulo_servicios {
   margin-bottom: 10%; }
 
-.btn, .btn_principal, .btn_secundario {
+.btn, .btn_principal, .btn_secundario, .btn-principal, .btn-secundario {
   border-radius: 2px;
   padding: 0.7em 1.5em;
   cursor: pointer;
@@ -283,3 +168,116 @@ label {
   .presentacion p {
     padding-right: 20px;
     padding-bottom: 10px; }
+
+.main {
+  width: auto;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  background-color: #a81238; }
+
+.main__section {
+  display: flex; }
+
+.main__section-formu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.gallery {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.gallery__img:hover {
+  transform: rotate(10deg); }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  box-sizing: border-box;
+  background-color: #A81238; }
+
+.row__column {
+  flex: 25%;
+  padding: 0 4px; }
+
+.row__column img {
+  margin-top: 8px;
+  vertical-align: middle; }
+
+nav, .servicios, .presentacion, .footer-content {
+  width: 80%;
+  margin: auto; }
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+p {
+  font-size: 1.8rem;
+  color: #f9b815; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: lighter; }
+
+.btn, .btn_principal, .btn_secundario, .btn-principal, .btn-secundario {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms; }
+  .btn:hover, .btn_principal:hover, .btn_secundario:hover, .btn-principal:hover, .btn-secundario:hover {
+    transform: scale(1.1); }
+
+.btn-primero {
+  display: flex;
+  justify-content: center; }
+
+.btn-principal {
+  color: #2b2b2b;
+  background-color: #f9b815; }
+
+.btn-secundario {
+  background-color: #f9b815; }
+
+/* MQ */
+@media (min-width: 1400px) {
+  nav, .servicios, .footer-content, .presentacion {
+    width: 60%;
+    margin: auto; } }
+
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    flex-direction: column; }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px; }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+    nav ul {
+      padding-left: 0; } }
+
+@media (max-width: 420px) {
+  .row {
+    flex-direction: column; }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px; }
+    .presentacion div h1, .presentacion div p {
+      padding: 0; } }

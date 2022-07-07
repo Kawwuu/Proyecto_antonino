@@ -1,34 +1,5 @@
-.cards {
-    @include flex(row, center, stretch, $spacing-xsmall);
-    flex-wrap: wrap;
-    .box {
-        @include flex(column, flex-start, stretch, map-get($spacings,$spacing-small));
-        flex: 1 1 clamp(300px, 30%, 400px);
-        color: $secondary;
-
-        &__info {
-            display: flex;
-            flex-direction: column;
-            padding: $spacing-medium
-        }    
-        
-        .box__title {
-            font-family: $font-principal, $font-secondary;
-            color: var(--secondary);
-            font-size: 2rem
-        }
-        
-        .box__subtitle {
-            margin-top: .6rem;
-            color: var(--secondary);
-            font-size: 1.2rem
-        }
-        
-        .box__text {
-            margin-top: 1rem;
-            color: var(--secondary);
-        }
-    }    
+.images{
+    width: 500px;
 }
 
 

@@ -13,50 +13,83 @@
     <meta name="keywords" content="Panaderia, Antonino, Home, Lugar, Localidad">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
-<body id="grid__container">
-    <header class="grid__header">
-            <picture class="header__logo">
-                <img class="header__img animate__animated animate__bounceInLeft" src="./images/logo_mejor1.png" alt="logo">
-            </picture>
-        <nav class="grid__menu nav">
-            <!-- <input type="checkbox" id="check">
-            <label for="check" class="bar-btn">
-                <span class="iconify" data-icon="dashicons:menu-alt"></span>
-            </label> -->
-            <ul class="menu" data-aos="flip-right">
-                <li class="menu__item">
-                    <a class="menu__link" href="./index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./pages/productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./pages/servicios.html">Servicios</a>
+<body>
+    <header id="menu">         
+        <nav>
+            <a href="./index.html"><img src="./images/logo_mejor2.png" class="logo animate__animated animate__bounceInLeft" alt="logo" width="300" height="50"></a>
+            <ul data-aos="flip-right">
+                <li>
+                    <a href="index.html">INICIO</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./pages/nosotros.html">Nosotros</a>
+                    <a href="./pages/productos.html">PRODUCTOS</a>
                 </li>
                 <li>
-                    <a class="menu__link" href="./pages/contacto.html">Contacto</a>
+                    <a href="./pages/servicios.html">SERVICIOS</a>
+                </li>
+                <li>
+                    <a href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">CONTACTO</a>
                 </li>
             </ul>
-        </nav>
+        </nav>            
     </header>
-    <main class="main grid__main">
-        <iframe src="./images/panaderia-panorama_video1.mp4" width="100%"></iframe>
-        <figure>
-            <img src="./images/panaderia_frente6.jpeg" width="100%">
-        </figure>
-    </main>
-    <footer class="grid__footer">
-        <address>
-            <p>Junín, Buenos Aires</p>
-        </address>
-        <h5>&copy; Derechos Reservados 2022</h5>
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>Panaderia y Confiteria Antonino</h1>
+            <p>
+                Mas que un grupo somos una familia, estamos juntos desde el inicio.
+            </p>
+            <div class="btn-primero">
+                <button class="btn-principal" type ="submit">COMUNICATE</button>
+                <button class="btn-secundario" type ="submit">TE CONTACTAMOS</button>
+            </div>
+        </div>
+        <div class="flex-item2">
+            <img src="./images/panaderia_frente13.jpeg" alt="caratula" width="500" height="400">
+        </div>
+    </section>
+    <div class="wrapper">
+        <section class="servicios" >
+            <div class="titulo-servicios">
+                <h2>Realizamos productos que se destacan por su calidad</h2>
+                <p>
+                    Todos nuestros productos están realizados en base a materia prima 100% artesanal.
+                </p>
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Horarios</h3>
+                    <p>
+                        Martes a Domingos de 6:00am a 13:30pm y de 15:00pm a 21:00pm.
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-laptop"></i>
+                    <h3>Harina 0000</h3>
+                    <p>
+                        Utilizamos la harina mas refinada.
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <h3>Ubicación</h3>
+                    <p>
+                        Nos encontramos en Avenida San Martin & Paso.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="footer-content">&copy; Derechos Reservados 2022</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 </html>

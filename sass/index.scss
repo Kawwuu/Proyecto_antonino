@@ -2,10 +2,9 @@
 
 
 /* MISC */
+@import './misc/mixins';
 @import './misc/variables';
 @import './misc/normalize';
-@import './misc/mixins';
-@import './misc/media';
 
 /* PARTIALS */
 @import './partials/header';
@@ -17,4 +16,7 @@
 @import './views/contacto';
 @import './views/nosotros';
 @import './views/productos';
+@import './views/home';
 
+/* MQ */
+@import './misc/media';

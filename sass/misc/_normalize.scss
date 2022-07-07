@@ -9,10 +9,10 @@ html{
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     line-height: 1.6;
-    font-family: $font-principal, $font-secondary;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: $primary;
 }
 
@@ -23,22 +23,10 @@ ul{
 a{
     text-decoration: none;
     display: inline-block;
-    color:  $secondary;
-}
-
-.container{
-    width: 80%;
-    margin: auto;
-}
-
-p{
-    font-size:$font-p;
     color: $secondary;
 }
-h2{
-    font-size: $font-h2;
-}
-h3{
-    font-size: $font-h3;
-    font-weight: lighter;
+
+img{
+    width:80%;
+    height: auto;
 }
